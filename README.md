@@ -6,13 +6,13 @@ There are multiple query methods already, each returns valid results in the form
 
 Check out the following sample code to get you started. Read the Easy Digital Downloads [API Reference](http://docs.easydigitaldownloads.com/category/1130-api-reference) for more information on how to obtain keys and tokens.
 
-####Usage
+#### Usage
 
-#####Load the sdk.
+##### Load the sdk.
 
     <script type="text/javascript" src="edd-api.js"></script>
 
-#####Call a reusable instance.
+##### Call a reusable instance.
 
     var my_edd_api = new EDD_API( {
         url: 'https://example.com/edd-api/v2/',
@@ -20,7 +20,7 @@ Check out the following sample code to get you started. Read the Easy Digital Do
         token: 'your_token_here'
     } );
 
-#####Test it.
+##### Test it.
 Use it the same way you do the PHP version. Currently it doesn't include any models though, pure json objects.
 
     my_edd_api.get_customer('valid@purchase-email.com', {}, function (customer) {
